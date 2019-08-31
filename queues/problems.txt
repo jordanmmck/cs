@@ -1,0 +1,5 @@
+### Common Problems
+
+~~~ Job Scheduling
+Q: given an unsorted list of jobs with start time and end time and varying duration, find the schedule which maximizes total jobs completed.
+A: Sort the list by job end time. Pull from front of list, if the next one conflicts with previous then discard, else pull it. 

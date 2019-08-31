@@ -1,0 +1,16 @@
+### Trees
+
+~~~ Free Trees (acyclic connected graph):
+`edges`: n-1
+
+~~~ Binary Tree
+-either empty, or consists of root, left subtree and right subtree, each of which is a BT
+
+~~~ Union
+-we want to be able to union sets and test for membership
+
++++ Quick Find
+
++++ Quick Union
+
+~~~ Extended BT

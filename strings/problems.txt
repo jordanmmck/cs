@@ -1,0 +1,27 @@
+### Common Problems
+
+~~~ Reverse String
+
+~~~ Is string a palindrome?
+
+~~~ Are all chars unique?
+
+~~~ Is one string a permutation of another?
+`sort and compare`:
+1. sort each string
+2. iterate through and compare chars
+
+`hash`:
+1. create hash function (h = <prime number>^(character ASCII val))
+2. hash each string
+3. if hashes match then return true
+
+`hash table`:
+1. hash the chars of one string incrementing a counter in the table
+2. hash the other string decrementing
+3. if all entries are 0 then return true
+
+~~~ Given 2 strings how many deletions until they are anagrams?
+1. make 2 arrays of size 26
+2. iterate through each string counting letter occurence
+3. sum the absolute value of the difference of each position in the arrays

@@ -1,0 +1,91 @@
+### Concepts
+
+~~~ Composition over inheritance
+-classes should achieve polymorphic behavior and code reuse by their composition (by containing instances of other classes that implement the desired functionality) rather than inheritance from a base or parent class.
+
+~~~ Stateless protocol
+-comm protocol that treats each req as an independent tx that is unrelated to any prev request
+-comm consists of independent pairs of request and response
+
+~~~ WSGI (web server gateway interface)
+-low level interface between web servers and web apps or frameworks
+-has server/gateway side (apache/nginx) and app side (py script)
+
+### REST
+
+-allows requesting systems to access and manip textual rep of web resources using a uniform and predefined set of stateless operations
+-`web resources`: entity that can be identified, named, addressed etc on the web
+-using HTTP, as is common, some ops include GET, POST, PUT, DELETE
+
+~~~ HTTP methods
+http://api.example.com/resources/
+
+`GET`: Retrieve some stuff
+`PUT`: Alter a field(s) in a form or whatever
+`POST`: Set the whole form or whatever
+`DELETE`: Delete the addressed member
+
+GET is safe, `nullipotent` so no side effects
+PUT and DELETE are `idempotent` can be repeated with no additional effect
+
+~~~ Best Practices
+-URLs should include nouns, not verbs
+-Use plural nouns
+-Use HTTP methods to operate on resources
+-Use HTTP response status codes to represent outcome
+
+~~~ REST constraints
++++ Client-Server
+-Separation of concerns is the principle behind this (data vs UI)
+
++++ Stateless
+-no client context is stored on the server between requests
+-each request from any client contains all the nec info to service the request, session state is held in client
+
++++ Cacheable
+-clients and intermediaries can cache responses
+-responses must define themselves as cacheable or not
+-well managed caching partially or completely eliminates some client-server interactions
+
++++ Layered system
+-client cannot ordinarily tell whether it is connected directly to end server or intermediary
+
++++ Code on demand (optional)
+-servers can temporarily extend or customize the functionality of a client by the transfer of executable code
+
++++ Uniform interface
+-uniform interface simplifies and decouples the architecture
+
+### Environment Variables
+
+echo $EDITOR                        print value
+echo $(which python3)               print env var value of which
+set                                 show all env vars that have been set
+var=value                           set env var for session
+export var=value                    set env var for session
+unset var                           clear var (session)
+source .bashrc                      load settings from .bashrc
+
+~~~ PATH
+-tells shell where to look for executable programs (ls, mkdir etc)
+-may contain several directories
+
+PATH=$PATH:/home/jordan/newdir      add a new directory
+PATH=.:$PATH                        add this dir to the front of dirs
+
+~~~ User env vars
+-loaded when user logs in
+-these are not read by zsh?
+
+`.bashrc,`:                         loaded for each local session
+`.bashprofile`:                     remote login
+`.bash_login`:                      used if no bashprofile
+`.profile`:                         used if no bashprofile
+
+~~~ System env vars
+-loaded upon system start
+
+`/etc/environment`:                 system wide env vars
+`/etc/profile`:                     system wide profile
+`/etc/profile.d`:
+`/etc/bash.bashrc`:                 system wide bashrc

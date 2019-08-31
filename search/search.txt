@@ -1,0 +1,3 @@
+### Search
+
+Initial state is root of tree. Start in initial state, check if this is goal state. If not expand outward.

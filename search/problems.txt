@@ -1,0 +1,6 @@
+### Common Problems
+
+~~~ N-Queens
+
+~~~ 8-Puzzle
+NP complete

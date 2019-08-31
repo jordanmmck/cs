@@ -1,0 +1,6 @@
+### Tree Algorithms
+
+~~~ Traversal
++++ Pre-order
++++ In-order
++++ Post-order

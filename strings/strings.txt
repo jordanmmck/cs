@@ -1,0 +1,3 @@
+### Strings
+
+Strings are typically arrays of character, which themselves are 1 byte or 2 byte numbers. Because of this implementation strings are typically immutable. Keep this in mind if an algorithm would change a string many times. For example if you write a loop that appends a single character to a string and saves this as a new string, it will have to create this entire array and copy everything over every time.

@@ -1,0 +1,11 @@
+import cmath as cm
+a = complex(2, 1)
+b = complex(5, 6)
+print(a.real)
+print(a.imag)
+print(a + b)
+print(a - b)
+print(a * b)
+print(a / b)
+print(abs(a))
+print(abs(b))
