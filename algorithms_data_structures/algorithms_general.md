@@ -1,16 +1,19 @@
-### General Algorithm stuff
+# General Algorithm stuff
 
-~~~ Types of Algorithms
+## Types of Algorithms
+
 `greedy`: make locally optimum choice at each stage
 `dynamic programming`:
 `hill climbing`: start with some solution, incrementally change single element of solution to improve solution
 `heuristic`: a practical method not optimal or perfect, but sufficient to help in most cases
 `exact algorithm`: algorithm that always solves problem to optimallity.
 
-~~~ Techniques
+## Techniques
+
 `memoization`: an optimization technique of storing the results of some expensive computation so that the next time the computation is demanded this cached result is returned.
 
-~~~ etc
+## etc
+
 Always consider hash tables (dictionaries) with their O(1)-ness. ("Tip: using a dictionary is the most common way to get from a brute force approach to something more clever. It should always be your first thought.")
 
 If at all array-related, try sorting first.

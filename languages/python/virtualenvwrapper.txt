@@ -1,0 +1,26 @@
+### VirtualEnvWrapper
+
+~~~ create new env
+mkvirtualenv --python=/usr/bin/python3 python3
+mkvirtualenv -p python3 myenv
+
+~~~ remove env
+rmvirtualenv env1
+
+~~~ start
+source env1/bin/activate
+
+~~~ exit
+deactivate
+
+~~~ switch environments
+workon env1
+
+~~~ see packages
+lssitepackages
+
+~~~ see stuff in venv
+ls $WORKON_HOME
+
+~~~ export requirements
+pip freeze --local > requirements.txt

@@ -22,15 +22,17 @@ A list is an abstract data type which may be implemented using an array.
 
 ### Rotate Array
 
-1. Calculate the shift = (size - num_rotations)%size
+1. Calculate the shift = `(size - num_rotations) % size`
 2. Make new array T
-3. T[(i+shift)%size]=A[i]
+3. `T[(i+shift)%size]=A[i]`
+
 `runtime`: O(n)
 `space`: O(n)
 
 1. Store num_rotations elements in temp array
 2. Shift other elements
-3. append temp array to original 
+3. append temp array to original
+
 `runtime`: O(n)
 `space`: O(num_rotations)
 
