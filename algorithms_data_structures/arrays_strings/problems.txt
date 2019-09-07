@@ -1,6 +1,0 @@
-### Common Problems
-
-~~~ Given 2 strings how many deletions until they are anagrams?
-1. make 2 arrays of size 26
-2. iterate through each string counting letter occurence
-3. sum the absolute value of the difference of each position in the arrays
