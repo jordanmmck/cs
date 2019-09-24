@@ -37,4 +37,5 @@ delete from data_filingsection;
 show dbs
 use planaria
 show collections
+db.collectionName.find( { city: "London" } ).skip( 20 ).limit( 20 );
 ```

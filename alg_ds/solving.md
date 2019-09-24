@@ -43,3 +43,11 @@ A lot of problems can be treated as graph problems and/or use breadth-first or d
 If you have a lot of strings, try putting them in a prefix tree / trie.
 
 Any time you repeatedly have to take the min or max of a dynamic collection, think heaps. (If you don’t need to insert random elements, prefer a sorted array.)
+
+When you have a solution, pull out some small part of it and write that code.
+Don't try to just write it all in one go.
+Write a part, make sure it is right, then onto the next one.
+
+Don't make assumptions.
+"The inner loop will have to run k times"
+Are you sure? Try the edge cases to verify.

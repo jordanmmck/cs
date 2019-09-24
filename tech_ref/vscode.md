@@ -13,3 +13,5 @@
 - JS Scratch: ⌘ k, j
 - ctrl + option + n
 - Search for file: ⌘ p
+
+`div>p*10>lorem`

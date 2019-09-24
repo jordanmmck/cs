@@ -12,19 +12,24 @@
 
 
 def min_swaps(arr):
-    return 0
+    val_to_ind = {}
+    for i, x in enumerate(arr):
+        val_to_ind[x] = i
+
+    count = 0
+    for i, x in enumerate(arr):
+
+        if i + 1 != x:
+            ind = val_to_ind[i + 1]
+            arr[i] ^= arr[ind]
+            arr[ind] ^= arr[i]
+            arr[i] ^= arr[ind]
+            val_to_ind[x] = ind
+            count += 1
+
+    return count
 
 
 arr = [7, 1, 3, 2, 4, 5, 6]
 print(arr)
 print(min_swaps(arr))
-
-# At every step it should become more ordered, never less
-# so a search would terminate. Hill climb?
-# from 2 to 6 are in order, these are not candidates to swap
-# you want the best bang for your buck
-# you want the swap that will move the big value farthest right
-# and the small val farthest left
-# can you not just look at the diff between the value and the normalized index?
-# find the largest and smallest in one pass
-# still n^2

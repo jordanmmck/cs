@@ -2,7 +2,11 @@
 
 Notes on algorithms, data structures, etc.
 
-## To do
+## To Learn
+
+### JS
+
+- async/await, promises
 
 ### Math stuff
 
@@ -15,7 +19,6 @@ Notes on algorithms, data structures, etc.
 
 ### Algs
 
-- Dynamic programming
 - In-place merge sort & heap sort with linear time heap building
 - tree insert/find
 - Dijkstra's algorithm w/ fibonacci heap
@@ -24,7 +27,6 @@ Notes on algorithms, data structures, etc.
 - 2D voronoi diagram generation
 - 2D convex hull generation
 - Knapsack & related DP problems
-- Plane sweep
 - Double sided search
 - Minimax
 
@@ -34,10 +36,14 @@ Notes on algorithms, data structures, etc.
 
 ### Problems
 
-- Compute all Permutations of String
-- Compute all Combinations of Set
-- N Queens
-- 8-puzzle
+[‎✔] Compute all subets of size k
+[‎ ] Compute all Permutations of String
+[ ] Compute all Combinations of Set
+[ ] N Queens
+[ ] 8-puzzle
+[ ] rotate array
+[ ] multiply matrix
+[ ] fibonacci stuff
 
 ### Concepts
 
