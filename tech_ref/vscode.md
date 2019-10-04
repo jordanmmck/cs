@@ -2,6 +2,7 @@
 
 - Open: ⌘ o
 - Multi-cursor: ⌥ ⌘ ↑ or ⌥ ⌘ ↓
+- Put cursor on each instance of word: ⌘ d
 - File explorer: ⌘ 0
 - Toggle sidebar: ⌘ B
 - Settings: ⌘ ,

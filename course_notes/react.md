@@ -5,6 +5,10 @@ yarn global add live-server
 live-server public
 ```
 
+## General Notes
+
+- React components update when `props` or `state` changes
+
 ## JSX (Javascript extension language)
 
 - ReactDOM renders JSX
