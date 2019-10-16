@@ -15,4 +15,6 @@
 - ctrl + option + n
 - Search for file: ⌘ p
 
-`div>p*10>lorem`
+- div with 10 p full of lorem `div>p*10>lorem`
+- make div with 'test' class name `.test`
+- make section with class 'section-about' `section.section-about`
