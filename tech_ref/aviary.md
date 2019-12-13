@@ -12,12 +12,12 @@ node server
 ## PSQL
 
 ```psql
-\c jordan;
-DROP DATABASE lazy_prices;
-CREATE DATABASE lazy_prices;
-CREATE USER lazy_prices_user WITH PASSWORD 'lazy_password';
-GRANT ALL PRIVILEGES ON DATABASE lazy_prices TO lazy_prices_user;
-\c lazy_prices;
+CREATE DATABASE riskshark;
+CREATE USER riskshark_user WITH PASSWORD 'riskshark_password';
+ALTER ROLE riskshark_user SET client_encoding TO 'utf8';
+ALTER ROLE riskshark_user SET default_transaction_isolation TO 'read committed';
+ALTER ROLE riskshark_user SET timezone TO 'UTC';
+GRANT ALL PRIVILEGES ON DATABASE riskshark TO riskshark_user;
 ```
 
 ```psql

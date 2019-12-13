@@ -18,3 +18,4 @@
 - div with 10 p full of lorem `div>p*10>lorem`
 - make div with 'test' class name `.test`
 - make section with class 'section-about' `section.section-about`
+- html boilerplate: `doc`

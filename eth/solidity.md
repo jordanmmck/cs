@@ -37,6 +37,7 @@ function whatIsMyNumber() public view returns (uint) {
 
 - there are `pure` functions whose return value _only_ depends on the inputs
 - there are `view` functions for simply returning some info
+- `view` functions don't cost gas when called externally
 
 ```js
 function sayHello() public view returns (string) {}
@@ -48,6 +49,10 @@ function _multiply(uint a, uint b) private pure returns (uint) {
 
 - typecasting: `uint8 c = a * uint8(b);`
 - hashing: `keccak256(abi.encodePacked("aaaab"));`
+- `public`: can be called by anyone
+- `private`: can only be used internally
+- `internal`: like private but can be used by contracts that import it
+- `external`: like public, but can _only_ can be called by outside things, not by other functions inside contract
 
 ## Events
 
@@ -174,4 +179,29 @@ contract ZombieFactory {
 
 }
 
+```
+
+## Time
+
+- `now` returns the current unix timestamp of the latest block
+
+## Loops
+
+```js
+function getEvens() pure external returns(uint[]) {
+  uint[] memory evens = new uint[](5);
+  // Keep track of the index in the new array:
+  uint counter = 0;
+  // Iterate 1 through 10 with a for loop:
+  for (uint i = 1; i <= 10; i++) {
+    // If `i` is even...
+    if (i % 2 == 0) {
+      // Add it to our array
+      evens[counter] = i;
+      // Increment counter to the next empty index in `evens`:
+      counter++;
+    }
+  }
+  return evens;
+}
 ```
